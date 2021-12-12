@@ -1,0 +1,64 @@
+FIX START
+
+declare str1, str2 : string
+declare i : integer
+declare ch1, ch2, ch3 : character
+
+str1="" 
+str2=""
+i=0
+ch1=''
+ch2=''
+ch3=''
+
+output "enter word; "
+input str1
+
+ch1 = left(str1,1)
+for i = 2 to lenght(str1)
+    ch2= mid(str1, i, 1)
+    if ch1=ch2 then
+      ch2= ' * '
+       str2= str2 & ch2
+       else if  ch1<>ch2 then
+      str2=str2 & ch2
+    end if 
+next i
+
+output " revised word is ;"& ch1 & str2
+    
+
+
+VB
+
+
+        Dim str1, str2 As String
+        Dim i As Integer
+        Dim ch1, ch2, ch3 As Char()
+
+        str1 = ""
+        str2 = ""
+        i = 0
+        ch1 = ""
+        ch2 = ""
+        ch3 = ""
+
+        Console.Write("enter word; ")
+        str1 = Console.ReadLine
+
+        ch1 = Left(str1, 1)
+        For i = 2 To Len(str1)
+            ch2 = Mid(str1, i, 1)
+            If ch1 = ch2 Then
+                ch2 = "*"
+                str2 = str2 & ch2
+            ElseIf ch1 <> ch2 Then
+                str2 = str2 & ch2
+            End If
+        Next i
+
+        Console.WriteLine(" revised word is ;" & ch1 & str2)
+
+        Console.ReadKey()
+
+

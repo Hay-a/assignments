@@ -1,0 +1,55 @@
+NOT_BAD
+
+declare str1, alpha, beta : string
+declare c, d : integer
+
+str1=""
+alpha="not"
+beta="bad"
+c=0
+d=0
+ 
+output " enter sentence"
+input str1
+
+if str1=alpha and str1= beta then
+    c =locate(str1,alpha)
+    d = locate (str1,beta)
+    if c < d then
+        beta = "good"
+        alpha=" "
+    endif
+endif
+    
+output (str1)
+      
+
+VB
+
+Dim str1, alpha, beta As String
+        Dim c, d As Integer
+
+        str1 = ""
+        alpha = "not"
+        beta = "bad"
+        c = 0
+        d = 0
+
+
+        Console.Write(" enter sentence ")
+        str1 = Console.ReadLine
+
+        If str1 = alpha And str1 = beta Then
+            c = InStr(str1, alpha)
+            d = InStr(str1, beta)
+            If c < d Then
+                beta = "good"
+                alpha = " "
+            End If
+        End If
+
+        Console.WriteLine(str1)
+
+        Console.ReadKey()
+
+

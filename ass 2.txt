@@ -1,0 +1,36 @@
+REPLACE SELECTED CHARACTER WITH ANOTHER IN ENTERED STRING
+
+declare  str1, str2: string
+declare ch1, ch2 ,ch3  : character
+declare i : integer
+
+str1=""
+sr2=""
+ch1=''
+ch2=''
+ch3=''
+i=0
+
+output "enter sentence: "
+input str1
+
+output "enter character to remove:"
+input ch1
+
+output"enter character to replace with:"
+input ch2
+
+
+
+for i = 1 to lenght(str1)
+    ch3= MID(str1, i, 1)
+    If ch3 <> ch1
+      then str2 = str2 & ch3
+      else
+       str2 = str2 & ch 2
+     end if 
+next i
+
+output = str2
+    
+    

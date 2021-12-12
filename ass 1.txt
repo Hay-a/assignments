@@ -1,0 +1,36 @@
+FIND IF THE INPUT STRNGS HAS ALL THE APBHABETS
+
+declare i : integer
+declare ch1 : character
+declare str1 , alphabet : string
+declare ispengram : boolean
+
+i=0
+ch1=''
+str1=""
+alphabet="A,B,C,D,E,F,E,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+ispengram= true
+
+
+output " enter first string:"
+input str1 
+
+str1=ucase(str1)
+
+for i = 1 to 26 
+    ch1 = mid(alphabet,i,1)
+    if locate (str1,ch1)=0
+      then 
+      is pengram = false 
+      if ispengram = false then
+        exit for
+      end if
+    end if
+next
+
+if is pengram= true
+  then
+  output "sentence is pengram"
+  else
+  output "sentence is not pengram"
+end if

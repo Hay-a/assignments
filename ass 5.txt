@@ -1,0 +1,60 @@
+FIND THE COUNT OF VOWELS IN AN ENTERED STRING
+
+declare str1, vow : string
+declare ch1 : character
+declare i, vowcount : integer
+
+str1= "" 
+vow="a,e,i,o,u"
+ch1=''
+i=0
+vowcount=0
+
+output "enter sentence "
+input str1
+
+lcase=str1
+
+for i =1 to lenght(str1)
+    ch1=mid(str1, i, 1)
+    if ch1='a' or ch1='e' or ch1='i' or ch1='o' or ch1='u'
+      then 
+      vowcount=vowcount+1
+    end if
+next
+
+output ("vowels in this  sentence are :" &  vowcount)
+
+VB
+
+
+        Dim str1, vow As String
+        Dim ch1 As Char()
+        Dim i, vowcount As Integer
+
+        str1 = ""
+        vow = "a,e,i,o,u"
+        ch1 = ""
+        i =
+        vowcount = 0
+
+        Console.Write("enter sentence ")
+        str1 = Console.ReadLine
+
+        str1 = LCase(str1)
+
+        For i = 1 To Len(str1)
+            ch1 = Mid(str1, i, 1)
+            If ch1 = "a" Or ch1 = "e" Or ch1 = "i" Or ch1 = "o" Or ch1 = "u" Then
+                vowcount = vowcount + 1
+            End If
+        Next
+
+        Console.Write("vowels in this  sentence are as " & vowcount)
+
+        Console.ReadKey()
+
+
+    
+    
+

@@ -1,0 +1,36 @@
+DONUTS
+
+
+declare dcount, i : integer
+
+dcount=0
+i =0
+
+output "enter number of donuts "
+input dcount
+
+if dcount < 10 then
+  output "number of donuts : ", dcount
+endif
+if dcount >10 then
+  output "number of donuts : many"
+end if
+
+VB
+        Dim dcount, i As Integer
+
+        dcount = 0
+        i = 0
+
+        Console.WriteLine("enter number of donuts ")
+        dcount = Console.ReadLine
+
+        If dcount < 10 Then
+            Console.WriteLine("number of donuts : " & dcount)
+        End If
+        If dcount > 10 Then
+            Console.WriteLine("number of donuts : many")
+        End If
+
+        Console.ReadKey()
+

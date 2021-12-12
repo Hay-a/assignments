@@ -1,0 +1,60 @@
+BOTH ENDS
+
+declare str1, str2 ,ch1, ch2 :string
+declare i , a : integer
+
+
+str1=""
+ i=0
+ch1=''
+ch2=''
+str2=""
+a=0
+
+output(enter word)
+input str1
+
+for i= 1 to lenght(str1)
+    a  = len(str1)
+    if a <= 2 then
+       output (string s)
+    else
+       ch1 =left (str1, 2)
+       ch2=right(str1, 2)
+       str2=ch1 & ch2
+    endif
+next
+
+output str2
+
+VB
+
+Dim str1, str2, ch1, ch2 As String
+        Dim i, a As Integer
+
+
+        str1 = ""
+        i = 0
+        ch1 = ""
+        ch2 = ""
+        str2 = ""
+        a = 0
+
+        Console.Write("enter word ")
+        str1 = Console.ReadLine
+
+        For i = 1 To Len(str1)
+            a = Len(str1)
+            If a <= 2 Then
+                Console.WriteLine("string s")
+            Else
+                ch1 = Left(str1, 2)
+                ch2 = Right(str1, 2)
+                str2 = ch1 & ch2
+            End If
+        Next
+
+        Console.WriteLine(" updated output is" & str2)
+
+        Console.ReadKey()
+

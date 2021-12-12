@@ -1,0 +1,60 @@
+VERBING
+
+declare beta, delta, alpha, str1  : string
+declare echo: integer
+
+
+beta="ing"
+delta="ly"
+alpha=""
+str1=""
+echo=0
+
+output " enter word "
+input str1
+
+echo=lenght(str1)
+if echo< 3 then
+  output  (str1)
+else
+  alpha = right (str1, 3)
+  if alpha = beta then
+    output ( str1 & delta)
+    else output (str1 & beta)
+  end if
+end if
+
+
+VB
+
+        Dim beta, delta, alpha, str1 As String
+        Dim echo, i As Integer
+
+
+        beta = "ing"
+        delta = "ly"
+        alpha = ""
+        str1 = ""
+        echo = 0
+        i = 0
+
+        Console.Write(" enter word ")
+        str1 = Console.ReadLine
+
+        echo = Len(str1)
+        If echo < 3 Then
+            Console.WriteLine(str1)
+        Else
+            alpha = Right(str1, 3)
+            If alpha = beta Then
+                Console.WriteLine(str1 & delta)
+            Else
+                Console.WriteLine(str1 & beta)
+            End If
+        End If
+
+        Console.ReadKey()
+
+
+
+

@@ -1,0 +1,79 @@
+FIND THE CHARACTER THAT APPEARS MOST NUMBER OF TIMES AND OUTPUT IT
+
+declare str1 : string
+declare ch1, ch2, alpha :character
+declare i, j, counter : integer
+
+str1 = ""
+ch2 =''
+ch1 =''
+alpha=''
+i=0
+j=0
+counter=0
+
+output  "enter sentence"
+input str1
+
+str1=lcase(str1)
+
+for j = 1 to lenght (str1)
+    ch1=mid(str1,j,1)
+    for i = 1 to lenght (str1) 
+         ch2 = mid(str1, i,1)
+         if i=ch2 then
+           counter = counter + 1
+           alpha = ch2
+         end if
+    next i
+next j
+
+VB
+
+
+
+        Dim str1 As String
+        Dim ch1, ch2, alpha As Char
+        Dim j, i, counter, mrc As Integer
+
+        str1 = ""
+        ch2 = ""
+        ch1 = ""
+        alpha = ""
+        i = 0
+        j = 0
+        counter = 0
+        mrc = 1
+
+        Console.Write("enter sentence ")
+        str1 = Console.ReadLine
+
+        str1 = LCase(str1)
+
+        For j = 1 To Len(str1)
+            counter = 0
+            ch1 = Mid(str1, j, 1)
+            For i = 1 To Len(str1)
+                ch2 = Mid(str1, i, 1)
+                If ch1 = ch2 Then
+                    counter = counter + 1
+                End If
+            Next i
+            If counter > mrc Then
+                mrc = counter
+                alpha = ch1
+            End If
+        Next j
+
+        Console.WriteLine(" character appearing most number of times is " & alpha)
+
+        Console.ReadKey()
+
+
+output" character appearing most number of times is "& alpha
+           
+        
+        
+
+    
+

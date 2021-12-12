@@ -1,0 +1,55 @@
+MIX UP
+
+declare str1, str2, chp1, chp2, chp3, chp4, : string
+
+str1=""
+str2=""
+chp1=""
+chp2=""
+chp3=""
+chp4=""
+
+output(enter first word)
+input str1
+
+output(enter second word)
+input str2
+
+chp1=left(str1, 2)
+chp4=mid(str1, 3, lenght(str1)
+chp2=left(str2, 2)
+chp3=mid(str1, lenght(str2)
+ 
+output chp1 & chp4
+output chp2 & chp3
+
+VB
+
+
+
+    Sub Main()
+
+        Dim str1, str2, chp1, chp2, chp3, chp4 As String
+
+        str1 = ""
+        str2 = ""
+        chp1 = ""
+        chp2 = ""
+        chp3 = ""
+        chp4 = ""
+
+        Console.Write("enter first word ")
+        str1 = Console.ReadLine
+
+        Console.Write("enter second word ")
+        str2 = Console.ReadLine
+
+        chp1 = Left(str1, 2)
+        chp4 = Mid(str2, 3, Len(str2))
+        chp2 = Left(str2, 2)
+        chp3 = Mid(str1, 3, Len(str1))
+
+        Console.WriteLine("first word is " & chp1 & chp4)
+        Console.WriteLine("second word is " & chp2 & chp3)
+
+        Console.ReadKey()

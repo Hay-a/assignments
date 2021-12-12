@@ -1,0 +1,89 @@
+COUNT AND OUTPUT THE NUMBER OF AN ENTERED CHARACTER. ALSO OUTPUT SEPARATE COUNTS FOR ALPHABETS, DIGITS AND OTHER CHRACTERS IN SAME STRING.
+
+declare str1 : string
+declare i,sincount,alpha, num, spech : integer
+declare ch1, singlechar : character
+
+str1= ""
+i=0
+sincount=0 
+alpha = 0
+num=0
+spech=0
+ch1=''
+singlechar=''
+
+output " enter sentence "
+input str1
+
+output " enetr single character "
+input singlechar
+
+str1=lcase(str1)
+
+for i = 1 to lenght(str1)
+    ch1=mid (str1,i,1)
+    if ch1= singlechar then
+      sincount=sincount + 1
+    end if
+    if ch1>= a and ch1<= z then 
+      alpha = alpha + 1
+    else if
+      ch1>= 0 ans ch1<= 9 then
+      num=num+1
+    else if
+       spech+ spech + 1
+    end if
+next i
+
+output " single charcter = " & singlecount
+output " total alphabets = " & alpha
+output " total numbers = " & num
+output " total special characters = " & spech
+
+VB
+
+Dim str1 As String
+        Dim i, sincount, alpha, num, spech As Integer
+        Dim ch1, singlechar As Char()
+
+        str1 = ""
+        i = 0
+        sincount = 0
+        alpha = 0
+        num = 0
+        spech = 0
+        ch1 = ""
+        singlechar = ""
+
+        Console.Write(" enter sentence ")
+        str1 = Console.ReadLine
+
+        Console.Write(" enter single char ")
+        singlechar = Console.ReadLine
+
+        str1 = LCase(str1)
+
+        For i = 1 To Len(str1)
+            ch1 = Mid(str1, i, 1)
+            If ch1 = singlechar Then
+                sincount = sincount + 1
+            End If
+            If ch1 >= "a" And ch1 <= "z" Then
+                alpha = alpha + 1
+            ElseIf ch1 >= "0" And ch1 <= "9" Then
+                num = num + 1
+            else If spech = (spech + 1)
+            End If
+        Next i
+
+        Console.WriteLine(" single charcter = " & sincount)
+        Console.WriteLine(" total alphabets = " & alpha)
+        Console.WriteLine(" total numbers = " & num)
+        Console.WriteLine(" total special chars = " & spech)
+
+        Console.ReadKey()
+
+
+      
+    
